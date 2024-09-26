@@ -31,3 +31,7 @@ SELECT * FROM russh.dr_example.table1;
 -- DBTITLE 1,Show the path to the MANAGED Table
 select storage_path from russh.information_schema.tables
 where table_name = 'table1'
+
+-- COMMAND ----------
+
+describe history russh.dr_example.table1

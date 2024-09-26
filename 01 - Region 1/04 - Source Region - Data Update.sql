@@ -1,7 +1,7 @@
 -- Databricks notebook source
 -- MAGIC %md
 -- MAGIC
--- MAGIC ## Make change in primary and clone change
+-- MAGIC ## Make change in source region data
 
 -- COMMAND ----------
 
@@ -22,16 +22,6 @@ SELECT 'after update' as version,* FROM russh.dr_example.table1@v2;
 
 -- DBTITLE 1,Deep clone is incremental any clones do not propagate any changes (note 0 files are copied)
 CREATE OR REPLACE TABLE delta.`s3://anindita-dr-tokyo/visitor` DEEP CLONE anindita.dr.primary_visitor
-
--- COMMAND ----------
-
--- MAGIC %python
--- MAGIC display(spark.sql("""DESCRIBE HISTORY primary_visitor"""))
-
--- COMMAND ----------
-
--- MAGIC %python
--- MAGIC display(spark.sql("SELECT * FROM primary_visitor"))
 
 -- COMMAND ----------
 
