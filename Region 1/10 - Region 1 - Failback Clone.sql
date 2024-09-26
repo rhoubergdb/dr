@@ -1,7 +1,7 @@
 -- Databricks notebook source
 -- MAGIC %md
--- MAGIC ## Region to Region Clone 1
--- MAGIC ###Clone (remote) External Table to (local) Managed Table
+-- MAGIC ## Failback to Region 1 Clone
+-- MAGIC ###Clone (local) External Table to (local) Managed Table
 
 -- COMMAND ----------
 
@@ -13,4 +13,6 @@ DESCRIBE HISTORY russh.dr_example.table1
 
 -- COMMAND ----------
 
-SELECT * FROM russh.dr_example.table1
+SELECT 'original' as version,* FROM russh.dr_example.table1@v1 order by id;
+SELECT 'region 1 update' as version,* FROM russh.dr_example.table1@v2 order by id;
+SELECT 'region 2 update' as version,* FROM russh.dr_example.table1@v3 order by id;
