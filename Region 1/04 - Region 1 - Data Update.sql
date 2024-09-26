@@ -15,8 +15,8 @@ DESCRIBE HISTORY russh.dr_example.table1
 -- COMMAND ----------
 
 -- DBTITLE 1,Show updated table
-SELECT 'original' as version,* FROM russh.dr_example.table1@v1;
-SELECT 'after update' as version,* FROM russh.dr_example.table1@v2;
+SELECT 'original' as version,* FROM russh.dr_example.table1@v1 order by id;
+SELECT 'after update' as version,* FROM russh.dr_example.table1@v2 order by id;
 
 -- COMMAND ----------
 
