@@ -1,5 +1,6 @@
 -- Databricks notebook source
 -- MAGIC %md
+-- MAGIC # [HALT ALL REGION 2 PROCESSING!!!]
 -- MAGIC ## Prepare for Failback
 -- MAGIC ### Region 2 clone back to Region 1
 -- MAGIC
