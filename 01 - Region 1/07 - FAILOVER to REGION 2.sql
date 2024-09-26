@@ -1,0 +1,4 @@
+-- Databricks notebook source
+-- MAGIC %md
+-- MAGIC ## [FAILOVER TO REGION 2]
+-- MAGIC At this point, we have experienced a Region 1 outage and we have failed over to Region 2
