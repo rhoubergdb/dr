@@ -13,4 +13,5 @@ DESCRIBE HISTORY russh.dr_example.table1
 
 -- COMMAND ----------
 
-SELECT * FROM russh.dr_example.table1
+SELECT 'original' as version,* FROM russh.dr_example.table1@v0 order by id;
+SELECT 'after update' as version,* FROM russh.dr_example.table1@v1 order by id;
