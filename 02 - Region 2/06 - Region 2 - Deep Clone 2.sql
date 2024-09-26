@@ -1,5 +1,16 @@
 -- Databricks notebook source
 -- MAGIC %md
--- MAGIC ## [FAILOVER to DESTINATION REGION]
--- MAGIC
--- MAGIC  At this point a failover to the destination region has occured. Data will now be changed in the dest
+-- MAGIC ## Region to Region Clone 2
+-- MAGIC ###Clone (remote) External Table to (local) Managed Table
+
+-- COMMAND ----------
+
+CREATE OR REPLACE TABLE russh.dr_example.table1 DEEP CLONE delta.`abfss://russh-ext-location@russhdemosa.dfs.core.windows.net/table1`
+
+-- COMMAND ----------
+
+DESCRIBE HISTORY russh.dr_example.table1
+
+-- COMMAND ----------
+
+SELECT * FROM russh.dr_example.table1
