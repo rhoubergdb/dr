@@ -1,0 +1,5 @@
+-- Databricks notebook source
+-- MAGIC %md
+-- MAGIC ## [FAILOVER to DESTINATION REGION]
+-- MAGIC
+-- MAGIC  At this point a failover to the destination region has occured. Data will now be changed in the dest
