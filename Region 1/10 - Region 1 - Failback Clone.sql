@@ -18,7 +18,7 @@ SELECT 'region 2 update' as version,* FROM russh.dr_example.table1@v3 order by i
 -- COMMAND ----------
 
 -- DBTITLE 1,Update Table1 with Failback Clone Data
-CREATE OR REPLACE TABLE russh.dr_example.table1 DEEP CLONE delta.`abfss://russh-ext-location@russhdemosa.dfs.core.windows.net/table1`
+CREATE OR REPLACE TABLE russh.dr_example.table1 DEEP CLONE delta.`abfss://russh-ext-location@russhdemoeastsa.dfs.core.windows.net/table1`
 
 -- COMMAND ----------
 
