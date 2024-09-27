@@ -30,4 +30,4 @@ DESCRIBE HISTORY russh.dr_example.table1
 -- DBTITLE 1,Show CURRENT data (Updated from Region 2)
 SELECT 'original' as version,* FROM russh.dr_example.table1@v1 order by id;
 SELECT 'region 1 update' as version,* FROM russh.dr_example.table1@v2 order by id;
-SELECT 'region 2 update' as version,* FROM russh.dr_example.table1@v3 order by id;
+SELECT 'region 2 update' as version,* FROM russh.dr_example.table1@v4 order by id;
