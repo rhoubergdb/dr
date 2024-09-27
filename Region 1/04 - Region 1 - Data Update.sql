@@ -16,4 +16,4 @@ DESCRIBE HISTORY russh.dr_example.table1
 
 -- DBTITLE 1,Show updated table
 SELECT 'original' as version,* FROM russh.dr_example.table1@v1 order by id;
-SELECT 'after update' as version,* FROM russh.dr_example.table1@v2 order by id;
+SELECT 'region 1 update' as version,* FROM russh.dr_example.table1@v2 order by id;

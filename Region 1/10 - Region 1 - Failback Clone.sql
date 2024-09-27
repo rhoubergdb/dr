@@ -1,7 +1,8 @@
 -- Databricks notebook source
 -- MAGIC %md
--- MAGIC ## Failback to Region 1 Clone
--- MAGIC ###Clone (local) External Table to (local) Managed Table
+-- MAGIC ## Failback
+-- MAGIC ###Clone (Region 2) External Table to (local) Managed Table
+-- MAGIC This clone operation will be an incremental update using the Change Data Feed from the Region 2 External Table to bring the local (Region 1) Managed Table up to date.
 
 -- COMMAND ----------
 

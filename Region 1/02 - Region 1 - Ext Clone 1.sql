@@ -1,8 +1,8 @@
 -- Databricks notebook source
 -- MAGIC %md
 -- MAGIC
--- MAGIC ## Managed to External Clone 1
--- MAGIC ### Clone (local) Managed Table to (local) External Table
+-- MAGIC ## Managed (Region 1) to External (Region 2) Clone 1
+-- MAGIC ### Clone local (Region 1) Managed Table to (Region 2) External Table
 
 -- COMMAND ----------
 
